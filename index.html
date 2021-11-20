@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- CSS Customizi -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Google Font (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- Font Themify icons -->
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="grid">
+            <!-- Thanh Menu top -  Navigation top of Header -->
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item has_qr item1">Vào cửa hàng trên ứng dụng
+                        <div class="qr_info">
+                            <a href=""><img src="./assets/images/QR_code.png" alt="Mã QR Code" title="Mã QR code"></a>
+                            <div class="apps">
+                                <a href="" class="google_play"><i class="fab fa-google-play"></i>Google Play</a>
+                                <a href="" class="app_store"><i class="fab fa-app-store-ios"></i> App Store</a>
+                                <a href="" class="app_gallery"><i class="fas fa-rocket"></i> App Gallery</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="header__nav-item">
+                        <span class="contact"> Kết nối </span>
+                        <a href="" class="link_media">
+                            <i class="fa-icon fab fa-facebook" title="Facebook"></i>
+                        </a>
+                        <a href="" class="link_media">
+                            <i class="fa-icon fab fa-instagram-square" title="Google"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item show_notify">
+                        <a href="" class="header__nav-item-link">
+                            <i class="fa-icon fas fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <div class="notification">
+                            <h3 class="title">Thông báo mới nhất</h3>
+                            <ul class="noti_info">
+                                <li class="li">
+                                    <a href="" class="noti_info_item">
+                                        <img src="./assets/images/mypham01.webp" alt="">
+                                        <div class="detail">
+                                            <p class="name_product">Mỹ phẩm Hàn Quốc Dodo chính hãng nhập khẩu giá ưu
+                                                đãi</p>
+                                            <p class="des_product">Công dụng làm sáng da, ngăn ngừa mụn, thích hợp với
+                                                nhiều loại da, được chiết xuất từ trái cây .</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="li">
+                                    <a href="" class="noti_info_item">
+                                        <img src="./assets/images/mypham02.webp" alt="">
+                                        <div class="detail">
+                                            <p class="name_product">Mỹ phẩm Hàn Quốc Dodo chính hãng nhập khẩu giá ưu
+                                                đãi</p>
+                                            <p class="des_product">Công dụng làm sáng da, ngăn ngừa mụn, thích hợp với
+                                                nhiều loại da, được chiết xuất từ trái cây .</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="li">
+                                    <a href="" class="noti_info_item">
+                                        <img src="./assets/images/mypham04.webp" alt="">
+                                        <div class="detail">
+                                            <p class="name_product">Mỹ phẩm Hàn Quốc Dodo chính hãng nhập khẩu giá ưu
+                                                đãi</p>
+                                            <p class="des_product">Công dụng làm sáng da, ngăn ngừa mụn, thích hợp với
+                                                nhiều loại da, được chiết xuất từ trái cây .</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="http://google.com" class="title_all">
+                                Xem tất cả
+                                <i class="arrow1 fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="header__nav-item">
+                        <a href="" class="header__nav-item-link">
+                            <i class="fa-icon fas fa-question-circle"></i>
+                            Trợ giúp
+                        </a>
+                    </li>
+
+                    <li class="header__nav-item item1 text-bold register_js">
+                        Đăng ký</li>
+                    <li class="header__nav-item text-bold login_js"><span class="ti-user"></span> Đăng nhập</li>
+
+                </ul>
+            </nav>
+
+            <!-- Khung tìm kiếm - Search secsion -->
+            <div class="header__search">
+                <div class="header_search-logo">
+                    <img src="./assets/images/logoSopee01.png" class="logo_img" alt="Điện thoại Chung Tuyết">
+                </div>
+                <div class="header_search-input">
+
+                    <!-- Search and Search history -->
+                    <div class="search_and_history">
+                        <input type="text" name="searchOfHeader" id="searchOfHeader" placeholder="Bạn muốn tìm gì?">
+                        <div class="search_history">
+                            <h3>Lịch sử tìm kiếm</h3>
+                            <ul>
+                                <li>Kem dưỡng da <i class="fas fa-angle-right"></i> </li>
+                                <li>Nồi cơm điện <i class="fas fa-angle-right"></i> </li>
+                                <li>Quảng gánh lo đi và vui sống <i class="fas fa-angle-right"></i> </li>
+                                <li>Iphone 13 Pro <i class="fas fa-angle-right"></i> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Chọn khu vực -->
+                    <div class="select_type">
+                        <span>Tìm theo khu vực</span>
+                        <i class="down1 fas fa-angle-down"></i>
+                        <ul class="option">
+                            <li><a href="">Miền Bắc</a></li>
+                            <li><a href="">Miền Trung</a></li>
+                            <li><a href="">Miền Nam</a></li>
+                        </ul>
+                    </div>
+                    <!-- Nút tìm kiếm -->
+                    <i class="fas fa-search btn_search" title="Tìm"></i>
+                </div>
+
+                <!-- Giỏ hàng -->
+                <div class="header_search-shoppingCart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="shopping_products">
+                        <p>Dạy con làm giàu <span> 1 </span></p>
+                        <p>Dầu gội đầu Xmen 500ml <span> 1 </span></p>
+                        <p>Samsung Galaxy Note 11 <span> 1 </span></p>
+                        <p>Áo thun Lada <span> 3 </span></p>
+                        <button class="paynow btn">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="container" style="font-size: 1.4rem; margin-top: 100px;">
+        <!-- <button class="btn btn1">Nhận thông báo</button> -->
+        <h4>Notes:</h4>
+        <ul>
+            <li>Sửa lại việc xuất hiện của mã QRCode</li>
+            <li>Hover vào chữ kết nối</li>
+            <li>Box-shadow của 1 vài khung</li>
+            <li>Tính khoa học của code</li>
+            <li>Tỉ lệ rem ban đầu: Cách tính</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <span style="user-select: none;">Mouse</span>
+        <p>Mouse p</p>
+        <h3 style="user-select: none;">Mouse h3</h3>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Modal Register -->
+            <div class="modal__register">
+                <div class="modal_container">
+                    <p class="modal_title_register">Đăng ký</p>
+                    <div class="modal_form">
+                        <form action="">
+                            <input type="email" name="email" id="email" placeholder="Email của bạn">
+                            <input type="text" name="username" id="username" placeholder="Tên đăng nhập">
+                            <input type="password" name="password" id="password" placeholder="Mật khẩu của bạn">
+                            <input type="password" name="password" id="password_2" placeholder="Nhập lại mật khẩu">
+                        </form>
+                    </div>
+                    <p class="info_policy">Bằng cách nhấn vào đăng ký, bạn đồng ý với
+                        <span>Chính sách điều khoản</span> và
+                        <span>Quyền riêng tư</span> của chúng tôi
+                    </p>
+                    <div class="btns">
+                        <button class="btn btn_back">
+                            QUAY LẠI
+                        </button>
+                        <button class="btn btn_continue">
+                            ĐĂNG KÝ
+                        </button>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <span> Hoặc đăng nhập bằng </span>
+                    <div class="link_media_form">
+                        <a href="" class="btn link_facebook">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="" class="btn link_google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__footer_2">
+                    <p>Bạn đã có tài khoản? <span class="modal_title_login">Đăng nhập</span> </p>
+                </div>
+
+            </div>
+
+            <!--Modal Login -->
+            <div class="modal__login">
+                <div class="modal_container">
+                    <p class="modal_title_register">Đăng nhập</p>
+                    <div class="modal_form">
+                        <form action="">
+                            <input type="text" name="username_2" id="username_2" placeholder="Tên đăng nhập">
+                            <input type="password" name="password_3" id="password_3" placeholder="Mật khẩu của bạn">
+                        </form>
+                    </div>
+                    <div class="question">
+                        <a href="" class="forgotPassword">Quên mật khẩu?</a>
+                        <span class="div"></span>
+                        <a href="" class="help">Cần trợ giúp?</a>
+                    </div>
+
+                    <div class="btns">
+                        <button class="btn btn_back ">
+                            QUAY LẠI
+                        </button>
+                        <button class="btn btn_continue btn--disable">
+                            ĐĂNG NHẬP
+                        </button>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <span> Hoặc đăng nhập bằng </span>
+                    <div class="link_media_form">
+                        <a href="" class="btn link_facebook">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="" class="btn link_google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__footer_2">
+                    <p>Bạn chưa có tài khoản? <span class="btn_back_2">Đăng ký</span> </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

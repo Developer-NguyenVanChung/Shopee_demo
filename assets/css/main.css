@@ -1,0 +1,707 @@
+/* ===== HEADER ===== */
+.header {
+    height: auto;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    list-style-type: none;
+    padding-left: unset;
+}
+
+.header__nav-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+.header__nav-item span.contact {
+    user-select: none;
+}
+
+.header__nav-item,
+.header__nav-item-link {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header__nav-item:hover,
+.header__nav-item-link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.header__nav-list .item1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 16px;
+    top: 50%;
+    right: -8px;
+    border-left: 1px solid var(--white-color);
+    transform: translateY(-50%);
+
+}
+
+/* Font Icons */
+.header__nav-item .link_media {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__nav-item .link_media:hover {
+    opacity: 0.8;
+}
+
+i.fa-icon {
+    font-size: 1.8rem;
+    margin: 0px 4px;
+}
+
+.header__nav-item span.contact {
+    cursor: text;
+    color: #fff;
+}
+
+/* ------- MÃ QR - QR CODE ----- */
+.header__nav-item .qr_info {
+    z-index: 10;
+    width: 200px;
+    box-shadow: 0 1px 5px #ccc;
+    padding: 0px 10px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 150%;
+    animation: fadeIn ease 0.1s;
+    display: none;
+}
+
+/* ----tạo cầu nối khi hover */
+.qr_info::before,
+.notification::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+
+.qr_info::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+    top: -20px;
+    right: 50%;
+    transform: translateX(50%);
+
+}
+
+.qr_info img {
+    width: 100%;
+}
+
+.qr_info a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.qr_info .apps {
+    padding-bottom: 4px;
+    padding-left: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.apps>a {
+    padding: 4px 0px;
+    width: 100%;
+}
+
+.apps>a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.apps>a>i {
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+.header__nav-list li.item1:hover .qr_info {
+    display: block;
+}
+
+/* ------ Thông báo - Notification ------------- */
+.header__nav-item .notification {
+    position: absolute;
+    box-shadow: 0 1px 4px #bbb;
+    border-radius: 4px;
+    width: 404px;
+    z-index: 10;
+    top: 150%;
+    right: 0;
+    background-color: #fff;
+    color: var(--text-color);
+    cursor: initial;
+    transform-origin: 90% top;
+    animation: fadeShow ease 0.4s;
+    will-change: opacity transform;
+    display: none;
+}
+
+.notification::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -29px;
+    right: 4px;
+    border-style: solid;
+    border-width: 20px 30px;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+@keyframes fadeShow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.notification h3.title {
+    text-align: center;
+    font-weight: 400;
+    user-select: none;
+    -webkit-user-select: none;
+    /* Macbook */
+    -moz-user-select: none;
+    margin-bottom: 0;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 8px;
+}
+
+.noti_info {
+    padding: 0px 10px;
+    list-style-type: none;
+}
+
+.noti_info a:hover {
+    background-color: #ddd;
+}
+
+.noti_info a {
+    text-decoration: none;
+}
+
+.noti_info .noti_info_item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.noti_info_item img {
+    width: 30%;
+    padding: 4px;
+    object-fit: contain;
+}
+
+.noti_info_item .detail {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.detail .name_product {
+    color: var(--black-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.detail .des_product {
+    color: #555;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-top: 4px;
+    text-align: justify;
+    margin-bottom: 1.6rem;
+}
+
+a.title_all i.arrow1 {
+    font-size: 1.5rem;
+    color: red;
+    padding-left: 4px;
+}
+
+.header__nav-list li.show_notify:hover .notification {
+    display: block;
+}
+
+.notification a.title_all {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px 20px;
+    color: var(--black-color);
+}
+
+.notification a.title_all:hover {
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+}
+
+/* --------- MODAL --------- */
+.modal_container {
+    padding: 0px 30px;
+}
+
+p.modal_title_register {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.modal_title_register,
+.btn_back_2 {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p span.modal_title_login {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.modal_form input {
+    width: 100%;
+    margin-top: 10px;
+    height: 36px;
+    padding: 0px 12px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.modal_form input:focus {
+    border: unset;
+    outline: 1px solid var(--primary-color);
+}
+
+p.info_policy {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0px 16px;
+}
+
+p.info_policy span {
+    color: var(--primary-color);
+}
+
+/* Button Control: Back and Continue */
+.modal_container .btns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    margin-top: 20px;
+}
+
+.btns .btn i {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.btns .btn_back {
+    background-color: #fff;
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+.btns .btn_back:hover {
+    background-color: #ddd;
+}
+
+.btns .btn_continue {
+    margin-left: 10px;
+}
+
+/* ---- Modal footer ---- */
+.modal__footer>span {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+
+}
+
+.modal__footer_2 {
+    background-color: #F5F5F5;
+}
+
+.modal__footer_2 p {
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: 1.4rem;
+}
+
+.modal__body .link_media_form {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 32px;
+    /* background-color: #ddd; */
+}
+
+.link_media_form .link_facebook,
+.link_google {
+    text-decoration: none;
+    padding: 10px 0px;
+    color: var(--white-color);
+    border-radius: unset;
+}
+
+.link_media_form .link_facebook {
+    flex: 1;
+    background-color: #3A5A98;
+    color: var(--white-color);
+    margin-right: 2px;
+}
+
+.link_media_form .link_google {
+    flex: 1;
+    background-color: rgb(125, 218, 125);
+    margin-left: 2px;
+}
+
+.link_media_form .fa-facebook,
+.fa-google {
+    margin-right: 10px;
+    color: var(--white-color);
+}
+
+.modal__login .question {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0px 0px 0px;
+
+}
+
+.modal__login .question a {
+    color: var(--text-color) !important;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.modal__login .question a.forgotPassword {
+    color: var(--primary-color) !important;
+}
+
+.modal__login .question span.div {
+    height: 22px;
+    width: 1px;
+    margin: -4px 16px 0px;
+    background-color: #b3b3b8b6;
+}
+
+.modal__login .question a.help {
+    color: #666 !important;
+}
+
+.modal__login .question a:hover {
+    font-style: italic;
+    opacity: 0.9;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.modal__body .modal__register {
+    /* display: none; */
+    z-index: 14;
+}
+
+.modal__body .modal__login {
+    /* display: none; */
+    z-index: 14;
+
+}
+
+/* -------- KHUNG TÌM KIẾM CỦA HEADER - SEARCH SECSION OF HEADER ---------- */
+.header .header__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header__search .header_search-logo {
+    /* border: 1px solid #fff; */
+}
+
+.header_search-logo .logo_img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+.header__search .header_search-input {
+    flex: 1;
+    background-color: #fff;
+    /* margin: 0px 0px; */
+    padding: 0px 4px 0px 0px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_search-input .search_and_history {
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+.search_and_history input#searchOfHeader {
+    padding: 0px 12px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.search_and_history .search_history {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #bbb;
+    border-radius: 3px;
+    width: calc(100% - 20px);
+    top: 110%;
+    left: 0;
+    z-index: 15;
+    display: none;
+}
+
+.search_history>h3 {
+    margin: 0;
+    padding: 8px 8px 4px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px dashed #777;
+    font-style: italic;
+}
+
+.search_history>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+.search_history>ul>li {
+    padding: 6px 0px 6px 12px;
+    cursor: pointer;
+}
+
+.search_history>ul>li>i {
+    float: right;
+    color: var(--white-color);
+    padding-right: 10px;
+    font-size: 1.6rem;
+    display: none;
+}
+
+.search_history>ul>li:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.search_history>ul>li:hover i {
+    display: inline-block;
+}
+
+input#searchOfHeader:focus~.search_history {
+    display: block;
+}
+
+
+/* ---- Tìm theo khu vực ---- */
+.header_search-input .select_type {
+    border-left: 1px solid #333;
+    margin: 0px 20px 0px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.header_search-input .select_type span {
+    font-size: 1.5rem;
+    padding: 0px 4px 0px 10px;
+}
+
+.select_type .option {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0px 0 0 0;
+    z-index: 14;
+    list-style-type: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px #bbb;
+    animation: fadeIn ease 0.15s;
+    display: none;
+}
+
+/* Cầu nối để hover */
+.select_type .option::after,
+.search_history::after,
+.shopping_products::after {
+    content: "";
+    display: block;
+    position: inherit;
+    width: 100%;
+    /* background-color: blue; */
+    height: 20px;
+    top: -14px;
+    left: 0;
+    z-index: 20;
+}
+
+.option li a {
+    display: block;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--text-color);
+    padding: 10px 10px 10px 20px;
+    text-decoration: none;
+}
+
+.select_type:hover .option {
+    display: block;
+}
+
+.option li:hover a {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.select_type i.down1 {
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.header_search-input>i.btn_search {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    padding: 8px 16px;
+}
+
+.header_search-input>i.btn_search:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.header__search .header_search-shoppingCart {
+    /* border: 1px solid #fff; */
+    margin-left: 16px;
+    padding: 0px 0px;
+    position: relative;
+}
+
+.header__search .header_search-shoppingCart>i {
+    color: var(--white-color);
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+.shopping_products {
+    position: absolute;
+    background-color: #fff;
+    top: 120%;
+    right: 0;
+    width: 220px;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    box-shadow: 0 1px 5px #bbb;
+    animation: fadeIn ease 0.2s;
+    display: none;
+}
+
+.shopping_products::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -31px;
+    right: 5px;
+    z-index: 16;
+    border: 20px solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.shopping_products>p {
+    margin: 0;
+    padding: 8px 16px;
+}
+
+.shopping_products>p:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    /* border-bottom: 1px dashed; */
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.shopping_products>p>span {
+    float: right;
+}
+
+.shopping_products button.paynow {
+    margin: 8px auto;
+    height: auto;
+    padding: 5px 6px;
+    font-size: 1.3rem;
+    display: block;
+}
+
+.header_search-shoppingCart:hover .shopping_products {
+    display: block;
+}
+
+
+
+
+
+/* ====== CONTENT ======= */
+.container {}
