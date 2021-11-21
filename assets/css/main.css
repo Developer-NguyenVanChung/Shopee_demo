@@ -745,6 +745,7 @@ input#searchOfHeader:focus~.search_history {
     /* border: 0.5px solid red;     */
     display: flex;
     align-items: center;
+    justify-content: space-around;
 
 }
 
@@ -754,7 +755,9 @@ input#searchOfHeader:focus~.search_history {
     align-items: center;
     justify-content: space-between;
 }
-
+.shopping_products_list_has-detail-2 span.remove{
+    color: var(--primary-color);
+}
 
 .shopping_products p  span{
     padding-right: 12px;
