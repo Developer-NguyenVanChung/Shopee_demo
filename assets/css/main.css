@@ -98,7 +98,7 @@
 .header__nav-item,
 .header__nav-item-link {
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -850,8 +850,7 @@ input#searchOfHeader:focus~.search_history {
 }
 
 
-
-
-
 /* ====== CONTENT ======= */
-.container {}
+.container {
+    font-size: 1.6rem;
+}
