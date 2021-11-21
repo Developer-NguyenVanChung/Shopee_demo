@@ -155,12 +155,35 @@
                 <!-- Giỏ hàng -->
                 <div class="header_search-shoppingCart">
                     <i class="fas fa-shopping-cart"></i>
+                    <span class="shoppingCart_product_number">10</span>
                     <div class="shopping_products">
-                        <p>Dạy con làm giàu <span> 1 </span></p>
-                        <p>Dầu gội đầu Xmen 500ml <span> 1 </span></p>
-                        <p>Samsung Galaxy Note 11 <span> 1 </span></p>
-                        <p>Áo thun Lada <span> 3 </span></p>
-                        <button class="paynow btn">Mua ngay</button>
+                        <!-- Chưa có sp -->
+                        <div class="shopping_products_list shopping_products_list_empty">
+                            <img src="./assets/images/empty_cart02.png" alt="Giỏ hàng trống">
+                            <span>Chưa có sản phẩm nào</span>
+                        </div>
+                        <!-- Đã có sp -->
+                        <div class="shopping_products_list shopping_products_list_has">
+                            <p class="shopping_products_list_has-title">Sản phẩm đã thêm</p>
+                            <ul class="shopping_products_list_has-many">
+                                <li class="shopping_products_list_has-detail">
+                                    <img src="./assets/images/mypham01.webp" alt="Mỹ phẩm Hàn quốc" class="shopping_products_list_has-detail-img">
+                                    <div class="shopping_products_list_has-detail-content">
+                                        <div class="shopping_products_list_has-detail-1">
+                                            <p>Mỹ phẩm hàn quốc chính hãng</p>
+                                            <span class="cost">2.000.000 đ</span>
+                                            <span class="multiple">x</span>
+                                            <span class="number">2</span>
+                                        </div>
+                                        <div class="shopping_products_list_has-detail-2">
+                                            <span class="des">Loại sản phẩm: Tự nhiên</span>
+                                            <span class="remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn">Xem giỏ hàng</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,7 +195,7 @@
     <div class="container" style="font-size: 1.4rem; margin-top: 100px;">
         <!-- <button class="btn btn1">Nhận thông báo</button> -->
         <h4>Notes:</h4>
-      
+
         <span style="user-select: none;">Mouse</span>
         <p>Mouse p</p>
         <h3 style="user-select: none;">Mouse h3</h3>
@@ -180,7 +203,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        
+
     </footer>
 
     <!-- Modal -->
