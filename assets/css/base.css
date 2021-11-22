@@ -132,7 +132,8 @@ html {
     justify-content: center;
 }
 .btn--nomal{
-    background-color: #ccc;
+    background-color: #fff;
+    color: #333;
 }
 
 .btns .btn.btn--disable {

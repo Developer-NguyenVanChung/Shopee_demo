@@ -944,7 +944,6 @@ input#searchOfHeader:focus~.search_history {
 }
 
 /* Home filter - select input */
-
 .home_filter__option {
     position: absolute;
     top: 100%;
@@ -1024,24 +1023,88 @@ input#searchOfHeader:focus~.search_history {
 /* ----- Sản phẩm ---- */
 .home_product {}
 
+/* ------------Điện thoại --------- */
+.home_product__phone{
+    border-bottom:1px solid #ddd ;
+    margin-bottom: 20px;
+}
+.home_product__phone-label{
+    font-size: 1.6rem;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
 .home_product__item {
     background-color: #fff;
     margin-bottom: 10px;
+    padding: 12px;
 }
 
 .home_product__item-img {
-    padding-top: 100%;
+    padding-top: 80%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:contain;
     background-position: center;
-    /* padding: 10px; */
 }
 
 .home_product__item-name {
     font-size: 1.4rem;
-    font-weight: 400;
     line-height: 1.8rem;
     margin-top: 8px;
     height: 3.6rem;
+    font-weight: 400;
+    margin: 8px 0px;
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.home_product__item-price {
+    font-size: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    /* justify-content: space-between; */
+}
+
+.home_product__item-price-old {
+    color: #666;
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+
+.home_product__item-price-new {
+    color:var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.home_product__item-user_action {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 8px 0px;
+}
+
+.home_product__item-user_action--like {
+
+}
+.home_product__item-user_action--liked i{
+    color: var(--white-color);
+}
+
+.home_product__item-user_action--rating {
+
+}
+
+.home_product__item-origin {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.home_product__item-origin_branch {
+
+}
+
+.home_product__item-origin_country {
+
 }
