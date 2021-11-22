@@ -40,7 +40,7 @@ html {
     padding-right: 12px;
 }
 
-.grid__column_8 {
+.grid__column_10{
     width: calc((100%/12)*10);
 }
 
@@ -119,9 +119,12 @@ html {
     color: var(--white-color);
     text-decoration: none;
     background-color: var(--primary-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+.btn--nomal{
+    background-color: #ccc;
 }
 
 .btns .btn.btn--disable {
