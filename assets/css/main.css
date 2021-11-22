@@ -669,9 +669,8 @@ input#searchOfHeader:focus~.search_history {
 }
 
 .select_type i.down1 {
-    font-size: 2rem;
-    display: inline-block;
-    margin-top: 2px;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .header_search-input>i.btn_search {
@@ -865,7 +864,7 @@ input#searchOfHeader:focus~.search_history {
 .category_heading {
     margin: 0;
     font-size: 1.6rem;
-    padding:0 0 12px 12px;
+    padding: 0 0 12px 12px;
     border-bottom: 1px solid #c9c3c3;
     cursor: default;
 }
@@ -916,3 +915,108 @@ input#searchOfHeader:focus~.search_history {
     background-color: #f5f5f5;
     color: var(--primary-color);
 }
+
+/* ------End Category -------- */
+
+
+/* Begin Sort and Filter */
+.home_sort_and_filter {
+    background-color: rgba(223, 217, 217, 0.6);
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 12px 22px;
+
+}
+
+.home_sort {}
+
+.home_sort__title {
+    font-size: 1.4rem;
+    margin-right: 12px;
+    cursor: default;
+    color: #555;
+}
+
+.home_sort__btn {
+    min-width: 90px;
+    margin-right: 12px;
+}
+
+/* Home filter - select input */
+
+.home_filter__option {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    font-size: 1.4rem;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    display: none;
+}
+
+.home_filter__option>span {
+    padding: 8px 12px;
+}
+
+.home_filter__option>span:hover {
+    background-color: #ddd;
+    color: var(--primary-color);
+}
+
+.home_filter__option--lth {
+    display: block;
+}
+
+.home_filter__option--htl {
+    display: block;
+
+}
+
+.home_filter:hover .home_filter__option {
+    display: block;
+}
+
+/* Home page status  */
+.home_status {
+    display: flex;
+    margin-left: auto;
+    font-size: 1.4rem;
+    align-items: center;
+
+}
+
+.home_status__pagenumber {
+    font-size: 1.5rem;
+}
+
+.home_status__pagenumber-current {
+    color: var(--primary-color);
+}
+
+.home_status__control {
+    background-color: #fff;
+    margin-left: 12px;
+    font-size: 1.7rem;
+    border-radius: 4px;    
+    overflow: hidden;
+}
+
+.home_status__control a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 8px 14px;
+}
+
+.home_status__control_1--disable{
+    background-color: #eee;
+    cursor: default;
+}
+
+.home_status__control--left {
+    color: #ccc;
+}
+
+.home_status__control--right {}

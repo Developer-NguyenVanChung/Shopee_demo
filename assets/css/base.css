@@ -33,6 +33,9 @@ html {
     margin-right: -12px;
     margin-left: -12px;
 }
+.grid__row_1{
+    padding-top: 24px;
+}
 
 .grid__column_2 {
     width: calc((100%/12)*2);
@@ -131,6 +134,27 @@ html {
     color: #e4e4e4;
     cursor: default;
     background-color: #aeaeae;
+}
+/* Slect input */
+.home_filter {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 0 12px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.home_filter__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.home_filter__icon{
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* Mũi tên trỏ lên */

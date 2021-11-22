@@ -246,7 +246,7 @@
     <!-- CONTENT -->
     <div class="container">
         <div class="grid">
-            <div class="grid__row">
+            <div class="grid__row grid__row_1">
                 <!-- Danh mục phải - sidebar -->
                 <div class="grid__column_2">
                     <div class="category">
@@ -273,11 +273,30 @@
 
                 <!-- Nội dung -->
                 <div class="grid__column_10">
-                    <div class="home_sort">
-                        <span>Sắp xếp theo</span>
-                        <button class="btn btn--nomal">Bán chạy</button>
-                        <button class="btn">Mới nhất</button>
-                        <button class="btn btn--nomal">Phổ biến</button>
+                    <div class="home_sort_and_filter">
+                        <div class="home_sort">
+                            <span class="home_sort__title">Sắp xếp theo</span>
+                            <button class="btn home_sort__btn  btn--nomal">Bán chạy</button>
+                            <button class="btn home_sort__btn ">Mới nhất</button>
+                            <button class="btn home_sort__btn  btn--nomal">Phổ biến</button>
+                        </div>
+                        <div class="home_filter">
+                            <span class="home_filter__title">Giá</span>
+                            <i class="home_filter__icon fas fa-angle-down"></i>
+                            <div class="home_filter__option">
+                                <span class="home_filter__option--lth">Thấp đến cao</span>
+                                <span class="home_filter__option--htl">Cao đến thấp</span>
+                            </div>
+                        </div>
+                        <div class="home_status">
+                            <span class="home_status__pagenumber">
+                                <span class="home_status__pagenumber-current">1</span>/14
+                            </span>
+                            <div class="home_status__control">
+                                <a href="#" class="home_status__control_1 home_status__control_1--disable"><i class="home_status__control--left fas fa-angle-left"></i></a>
+                                <a href="#" class="home_status__control_2"><i class="home_status__control--right fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
