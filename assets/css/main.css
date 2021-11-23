@@ -1136,42 +1136,66 @@ input#searchOfHeader:focus~.search_history {
 /* Nhãn yêu thích */
 .home_product__item-branch_love {
     position: absolute;
-    top: 10px;
+    top: 4px;
     left: -4px;
     line-height: 1.5rem;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    background-color:var(--primary-color);
-    color: var(--white-color);
+    color: var(--primary-color);
+    background-color: currentColor;
 }
 
 .home_product__item-branch_love-icon {
     font-size: 0.9rem;
     margin: 0 1px 0 5px;
+    color: var(--white-color);
 }
 
 .home_product__item-branch_love-label {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-right: 4px;
+    color: var(--white-color);
 }
-    /* Nhãn giảm giá */
+
+.home_product__item-branch_love::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+
+/* Nhãn giảm giá */
 .home_product__item-sale_off {
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
-    background-color: var(--rating-yellow-color);
-    padding: 0px 4px;
+    background-color: rgba(255, 216, 64, 0.9);
+    padding: 2px 4px;
     font-weight: 600;
-
+    text-align: center;
 }
 
 .home_product__item-sale_off-number {
     color: var(--primary-color);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .home_product__item-sale_off-label {
     color: var(--white-color);
+    font-size: 1.2rem;
+}
+.home_product__item-sale_off::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 0px);
+    right: 0;
+    border-width: 0 19px 6px;
+    border-style:solid ;
+    border-color:transparent rgba(255, 216, 64, 0.9) transparent rgba(255, 216, 64, 0.9) ;
+
 }
