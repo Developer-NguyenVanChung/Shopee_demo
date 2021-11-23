@@ -1024,45 +1024,48 @@ input#searchOfHeader:focus~.search_history {
 .home_product {}
 
 /* ------------Điện thoại --------- */
-.home_product__phone{
-    border-bottom:1px solid #ddd ;
+.home_product__phone {
+    border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
 }
-.home_product__phone-label{
+
+.home_product__phone-label {
     font-size: 1.6rem;
     padding-left: 8px;
     margin-bottom: 10px;
 }
+
 .home_product__item {
     background-color: #fff;
     margin-bottom: 10px;
-    padding: 12px;
+    padding: 12px 0px;
 }
 
 .home_product__item-img {
-    padding-top: 80%;
+    padding-top: 70%;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position: center;
 }
 
 .home_product__item-name {
     font-size: 1.4rem;
     line-height: 1.8rem;
-    margin-top: 8px;
     height: 3.6rem;
     font-weight: 400;
-    margin: 8px 0px;
+    margin: 12px 10px 8px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
+
 .home_product__item-price {
-    font-size: 1.4rem;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    font-size: 1.4rem;
+    margin: 0px 10px;
     /* justify-content: space-between; */
 }
 
@@ -1073,38 +1076,58 @@ input#searchOfHeader:focus~.search_history {
 }
 
 .home_product__item-price-new {
-    color:var(--primary-color);
+    color: var(--primary-color);
     font-size: 1.5rem;
 }
 
 .home_product__item-user_action {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 1.3rem;
-    padding: 8px 0px;
+    margin: 8px 10px;
 }
 
-.home_product__item-user_action--like {
-
+.home_product__item-user_action--like .like-fill {
+    display: none;
+    color: var(--primary-color);
 }
-.home_product__item-user_action--liked i{
-    color: var(--white-color);
+
+.home_product__item-user_action--liked .like-fill {
+    display: inline-block;
+}
+
+.home_product__item-user_action--liked .like-nomal {
+    display: none;
 }
 
 .home_product__item-user_action--rating {
+    font-size: 1rem;
+    color: #d5d5d5;
+    margin-left: auto;
+}
 
+.home_product__item-user_action--rating_yellow {
+    color: var(--rating-yellow-color);
+}
+
+.home_product__item-user_action--sold {
+    color: var(--text-color);
+    margin-left: 6px;
+    font-size: 1.4rem;
+    margin-left: auto;
+    /* display: none; */
 }
 
 .home_product__item-origin {
     display: flex;
     justify-content: space-between;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    color: #595959;
+    margin: 0px 10px;
+    font-weight: 300;
 }
 
-.home_product__item-origin_branch {
+.home_product__item-origin_branch {}
 
-}
-
-.home_product__item-origin_country {
-
-}
+.home_product__item-origin_country {}
